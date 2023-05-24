@@ -1,9 +1,12 @@
 # sui-boot
 The sui-boot repository contains an ansible playbook designed to efficiently set up a SUI validator on an Ubuntu bare metal server.
+
 ## pre requisites:
 Before using sui-boot, ensure the following prerequisites are met:
 * Ansible is installed.
 * The user has sudo privileges.
+## Tested on Latitude.sh Bare Metal Server c3.large.x86
+sui-boot has been thoroughly tested on the Latitude.sh bare metal server using the c3.large.x86 configuration. This ensures the compatibility and reliability of the playbook on this specific platform.
 ## inventory
 The repository includes the following inventory files:
 * testnet.yaml
