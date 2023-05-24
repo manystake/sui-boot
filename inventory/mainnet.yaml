@@ -1,0 +1,11 @@
+---
+validator:
+  hosts:
+    local:
+      ansible_host: 127.0.0.1
+      ansible_user: ubuntu
+      keypair_path: "./key-pairs/"
+      metrics_push_url: "https://metrics-proxy.mainnet.sui.io:8443/publish/metrics"
+      validator_fqdn: "validator.changeme.com"
+      genesis_url: "https://github.com/MystenLabs/sui-genesis/raw/main/mainnet/genesis.blob"
+      sui_release: "4c9993fa095db8fa2a4791d8ad40d956ef3f6b9e"

@@ -1,0 +1,11 @@
+#cloud-config
+apt:
+ primary:
+  - arches: [default]
+    uri: http://us.archive.ubuntu.com/ubuntu/
+
+runcmd:
+  - apt update
+  - apt install git curl unzip ansible --yes
+  - git clone -b main https://github.com/manystake/sui-boot.git /root/sui-boot
+  - cd /root/sui-boot && ansible-playbook -i inventory.yaml sui-node.yaml -e host=127.0.0.1

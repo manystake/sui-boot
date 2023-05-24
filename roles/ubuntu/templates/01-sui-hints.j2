@@ -1,0 +1,25 @@
+#!/bin/bash
+echo ''
+echo ''
+echo -e "👷  Hello SUI Operator. Your node is almost ready."
+
+echo -e "🛠   In order to complete the configuration, copy your keys in the following locations:"
+echo ''
+echo -e "🔑  protocol.key => /opt/sui/key-pairs/protocol.key"
+echo -e "🔑  worker.key => /opt/sui/key-pairs/worker.key"
+echo -e "🔑  network.key => /opt/sui/key-pairs/network.key"
+echo ''
+echo -e "🚀  When you are done, start services:"
+echo -e "sudo systemctl start sui-node"
+echo ''
+echo -e "🚨 It's recommanded to build sui software from source code:"
+echo -e "sudo su - sui"
+echo -e "git clone https://github.com/MystenLabs/sui.git && cd sui"
+echo -e "git checkout <commit sha>"
+echo -e "cargo build --release"
+echo -e "mv ./target/release/sui-node /opt/sui/bin/sui-node"
+echo ''
+echo -e '👀  Watch logs:'
+echo 'journalctl -u sui-node -f'
+echo ''
+echo '------------------------------------------------------------------------------------------------------------------'

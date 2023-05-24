@@ -1,0 +1,11 @@
+---
+- hosts: "{{ host }}"
+  become: yes
+  roles:
+    - ubuntu
+    - sui-node
+  vars:
+    skip_iptables: false
+    skip_monitoring: false
+    reset_db: false
+    start_sui: true
