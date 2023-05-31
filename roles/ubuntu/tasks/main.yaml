@@ -14,5 +14,5 @@
 - name: Include chronly tasks
   ansible.builtin.include_tasks: "{{ role_path }}/tasks/chronly.yaml"
 
-- name: Include helpers tasks
+- name: Include advisor tasks
   ansible.builtin.include_tasks: "{{ role_path }}/tasks/advisor.yaml"
